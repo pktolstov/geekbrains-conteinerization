@@ -1,0 +1,7 @@
+---
+resources:
+  - authority.yaml
+  - deploy_doom.yaml
+  - namespace.yaml
+  - rbac.yaml
+
