@@ -1,0 +1,16 @@
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: data
+  labels:
+    type: local
+    app: prometheus
+spec:
+  storageClassName: prom-hdd-5g
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    path: "/prometheus"
